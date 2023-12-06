@@ -13,6 +13,10 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Money Tracker"
+rootProject.name = "MoneyTracker"
+enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 include(":app")
- 
+include(":domain")
+include(":data")
+include(":core")
+include(":designsystem")

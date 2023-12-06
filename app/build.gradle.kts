@@ -52,6 +52,11 @@ android {
 
 dependencies {
 
+    implementation(projects.core)
+    implementation(projects.domain)
+    implementation(projects.data)
+    implementation(projects.designsystem)
+
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)
     implementation(libs.activity.compose)
@@ -67,7 +72,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(platform(libs.compose.bom))
     androidTestImplementation(libs.ui.test.junit4)
-    
+
     debugImplementation(libs.ui.tooling)
     debugImplementation(libs.ui.test.manifest)
 }
